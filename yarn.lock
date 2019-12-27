@@ -780,9 +780,9 @@
     get-package-name "^1.0.0"
 
 "@dword-design/base@^3.5.0", "@dword-design/base@^3.7.2":
-  version "3.10.0"
-  resolved "https://registry.yarnpkg.com/@dword-design/base/-/base-3.10.0.tgz#41d2d01c4b79ef614972c7c9cf875d7c02fec99c"
-  integrity sha512-FHTPpImjtY2C0efZnFx9508T7rBYfmUv7aNBaoWxTJvM8dt123lLQIR1oBlPOsZs1qUWa3EIt7o1rW9PjWdoRA==
+  version "3.10.1"
+  resolved "https://registry.yarnpkg.com/@dword-design/base/-/base-3.10.1.tgz#b6df0583f989778088fd4a2d99944e6e7075af09"
+  integrity sha512-Dl1/SFsUD21AltLh121j28Ctqnoa051eM59fuIKTHMuamZeqgDcoEzQe7NXBQgx9RbaYM0aRKDPa/nOevb/KVA==
   dependencies:
     "@babel/cli" "^7.6.4"
     "@babel/core" "^7.6.4"
