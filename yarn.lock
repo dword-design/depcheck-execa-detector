@@ -844,9 +844,9 @@
     safe-require "^1.0.3"
 
 "@dword-design/config-files@^2.0.0":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@dword-design/config-files/-/config-files-2.2.1.tgz#6ceb15f9cba71e50401862160ca4dd172109e97e"
-  integrity sha512-EvK61UkgL4zHUffALdEmtjQGyZkaGc7rlfFe3AbeQxA3yPhhxl8rWPVE9cupKH47g0AiqQ3embO61mDOnGVTVA==
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@dword-design/config-files/-/config-files-2.2.3.tgz#ec27eeed3753f5cc33b89349dcfc8b3545328366"
+  integrity sha512-fK/rAOWGakCJLYwFnHBZgyvn+5OV1/iY4cLxQ0WgvC4KsTffQegp5QEMt6GgIWDQeqg7+zJFl5e7kHDtHzeBxQ==
   dependencies:
     "@dword-design/base-config" "^1.0.1"
     "@dword-design/functions" "^2.4.0"
