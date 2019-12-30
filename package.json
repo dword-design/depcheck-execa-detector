@@ -21,7 +21,7 @@
     "resolve-from": "^5.0.0"
   },
   "devDependencies": {
-    "@dword-design/base": "^3.7.2",
+    "@dword-design/base": "^4.0.0",
     "child-process-promise": "^2.2.1",
     "depcheck": "dword-design/depcheck#fork",
     "output-files": "^1.1.10",
