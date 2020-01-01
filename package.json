@@ -1,9 +1,7 @@
 {
   "name": "@dword-design/depcheck-spawn-detector",
   "version": "1.0.1",
-  "bugs": {
-    "url": "https://github.com/dword-design/depcheck-spawn-detector/issues"
-  },
+  "description": "",
   "repository": "dword-design/depcheck-spawn-detector",
   "license": "MIT",
   "author": "Sebastian Landwehr <info@dword-design.de>",
@@ -21,15 +19,10 @@
     "resolve-from": "^5.0.0"
   },
   "devDependencies": {
-    "@dword-design/base": "^3.7.2",
+    "@dword-design/base": "^4.0.0",
     "child-process-promise": "^2.2.1",
     "depcheck": "dword-design/depcheck#fork",
     "output-files": "^1.1.10",
     "with-local-tmp-dir": "^2.2.4"
-  },
-  "contributors": [
-    "dword-design (http://www.dword-design.de)",
-    "Renovate Bot (http://renovatebot.com)"
-  ],
-  "maintainers": []
+  }
 }
