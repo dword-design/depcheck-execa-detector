@@ -27,7 +27,7 @@ export default () => withLocalTmpDir(__dirname, async () => {
         }
       }
     `,
-    'src/index.js': 'execa(\'foo\')',
+    'src/index.js': 'execa.command(\'foo bar\')',
   })
   await execa.command('depcheck --config depcheck.config.js')
 })

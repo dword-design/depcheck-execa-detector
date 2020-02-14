@@ -1,26 +1,34 @@
 import withLocalTmpDir from 'with-local-tmp-dir'
 import outputFiles from 'output-files'
 import { endent } from '@dword-design/functions'
-import { spawn } from 'child-process-promise'
+import execa from 'execa'
 
 export default () => withLocalTmpDir(__dirname, async () => {
   await outputFiles({
     'depcheck.config.js': endent`
-      const spawnDetector = require('@dword-design/depcheck-spawn-detector')
+      const execaDetector = require('@dword-design/depcheck-execa-detector')
 
       module.exports = {
         detectors: [
-          spawnDetector,
+          execaDetector,
         ],
       }
     `,
-    'node_modules/foo/package.json': JSON.stringify({ bin: { bar: './dist/cli.js' } }),
-    'package.json': JSON.stringify({
-      dependencies: {
-        foo: '^1.0.0',
-      },
-    }),
-    'src/index.js': 'spawn(\'bar\')',
+    'node_modules/foo/package.json': endent`
+      {
+        "bin": {
+          "bar": "./dist/cli.js"
+        }
+      }
+    `,
+    'package.json': endent`
+      {
+        "dependencies": {
+          "foo": "^1.0.0"
+        }
+      }
+    `,
+    'src/index.js': 'execa(\'bar\')',
   })
-  await spawn('depcheck', ['--config', 'depcheck.config.js', '.'])
+  await execa.command('depcheck --config depcheck.config.js')
 })

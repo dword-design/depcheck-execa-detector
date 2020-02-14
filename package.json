@@ -1,8 +1,8 @@
 {
-  "name": "@dword-design/depcheck-spawn-detector",
-  "version": "1.0.3",
+  "name": "@dword-design/depcheck-execa-detector",
+  "version": "1.0.0",
   "description": "",
-  "repository": "dword-design/depcheck-spawn-detector",
+  "repository": "dword-design/depcheck-execa-detector",
   "license": "MIT",
   "author": "Sebastian Landwehr <info@dword-design.de>",
   "main": "dist/index.js",
@@ -21,8 +21,8 @@
   },
   "devDependencies": {
     "@dword-design/base": "^5.0.0",
-    "child-process-promise": "^2.2.1",
     "depcheck": "dword-design/depcheck#fork",
+    "execa": "^4.0.0",
     "output-files": "^1.1.10",
     "with-local-tmp-dir": "^2.2.4"
   }
