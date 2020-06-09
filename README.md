@@ -1,11 +1,10 @@
 <!-- TITLE/ -->
-# @dword-design/depcheck-execa-detector
+# depcheck-execa-detector
 <!-- /TITLE -->
 
 <!-- BADGES/ -->
-[![NPM version](https://img.shields.io/npm/v/@dword-design/depcheck-execa-detector.svg)](https://npmjs.org/package/@dword-design/depcheck-execa-detector)
+[![NPM version](https://img.shields.io/npm/v/depcheck-execa-detector.svg)](https://npmjs.org/package/depcheck-execa-detector)
 ![Linux macOS Windows compatible](https://img.shields.io/badge/os-linux%20%7C%C2%A0macos%20%7C%C2%A0windows-blue)
-
 [![Build status](https://img.shields.io/github/workflow/status/dword-design/depcheck-execa-detector/build)](https://github.com/dword-design/depcheck-execa-detector/actions)
 [![Coverage status](https://img.shields.io/coveralls/dword-design/depcheck-execa-detector)](https://coveralls.io/github/dword-design/depcheck-execa-detector)
 [![Dependency status](https://img.shields.io/david/dword-design/depcheck-execa-detector)](https://david-dm.org/dword-design/depcheck-execa-detector)
@@ -15,18 +14,18 @@
 <!-- /BADGES -->
 
 <!-- DESCRIPTION/ -->
-
+Detector for depcheck that finds dependencies in execa calls.
 <!-- /DESCRIPTION -->
 
 <!-- INSTALL/ -->
-# Install
+## Install
 
 ```bash
 # NPM
-$ npm install @dword-design/depcheck-execa-detector
+$ npm install depcheck-execa-detector
 
 # Yarn
-$ yarn add @dword-design/depcheck-execa-detector
+$ yarn add depcheck-execa-detector
 ```
 <!-- /INSTALL -->
 
@@ -65,7 +64,7 @@ execa.command('foo bar')
 ```
 
 <!-- LICENSE/ -->
-# License
+## License
 
 Unless stated otherwise all works are:
 
