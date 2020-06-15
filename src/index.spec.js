@@ -8,7 +8,7 @@ export default {
     withLocalTmpDir(async () => {
       await outputFiles({
         'depcheck.config.js': endent`
-        const execaDetector = require('@dword-design/depcheck-execa-detector')
+        const execaDetector = require('../src')
 
         module.exports = {
           detectors: [
@@ -38,7 +38,7 @@ export default {
     withLocalTmpDir(async () => {
       await outputFiles({
         'depcheck.config.js': endent`
-        const execaDetector = require('@dword-design/depcheck-execa-detector')
+        const execaDetector = require('../src')
 
         module.exports = {
           detectors: [
@@ -67,7 +67,7 @@ export default {
     withLocalTmpDir(async () => {
       await outputFiles({
         'depcheck.config.js': endent`
-        const execaDetector = require('@dword-design/depcheck-execa-detector')
+        const execaDetector = require('../src')
 
         module.exports = {
           detectors: [
