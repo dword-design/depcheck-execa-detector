@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/dword-design/depcheck-execa-detector/compare/v1.0.3...v1.1.0) (2020-06-20)
+
+
+### Features
+
+* template tag support ([34b12b6](https://github.com/dword-design/depcheck-execa-detector/commit/34b12b6b716482eef47c7ad596399cf55cc13966))
+
 ## [1.0.3](https://github.com/dword-design/depcheck-execa-detector/compare/v1.0.2...v1.0.3) (2020-06-20)
 
 

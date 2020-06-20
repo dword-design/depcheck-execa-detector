@@ -1,6 +1,6 @@
 {
   "name": "depcheck-execa-detector",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Detector for depcheck that finds dependencies in execa calls.",
   "repository": "dword-design/depcheck-execa-detector",
   "license": "MIT",
