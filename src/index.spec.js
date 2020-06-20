@@ -79,7 +79,7 @@ export default {
   `,
     'src/index.js': "execa.command('foo bar')",
   },
-  'template tag': {
+  'template tag: simple': {
     'depcheck.config.js': endent`
     const execaDetector = require('../src')
 
@@ -103,5 +103,30 @@ export default {
     }
   `,
     'src/index.js': "execa.command(`foo ${'bar'} baz`)",
+  },
+  'template tag: params': {
+    'depcheck.config.js': endent`
+    const execaDetector = require('../src')
+
+    module.exports = {
+      detectors: [
+        execaDetector,
+      ],
+    }
+  `,
+    'node_modules/foo/package.json': endent`
+    {
+      "name": "foo",
+      "bin": "./dist/cli.js"
+    }
+  `,
+    'package.json': endent`
+    {
+      "dependencies": {
+        "foo": "^1.0.0"
+      }
+    }
+  `,
+    'src/index.js': "execa.command(`foo bar ${'bar'}`)",
   },
 } |> mapValues(runTest)

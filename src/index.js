@@ -9,7 +9,7 @@ import {
   mapValues,
   uniq,
   split,
-  trim,
+  join,
 } from '@dword-design/functions'
 import resolveFrom from 'resolve-from'
 
@@ -23,7 +23,11 @@ const getSegments = node => {
         return node.arguments[0].value |> split(' ')
       case 'TemplateLiteral':
         return (
-          node.arguments[0].quasis |> map('value.raw') |> map(trim) |> compact
+          node.arguments[0].quasis
+          |> map('value.raw')
+          |> join(' ')
+          |> split(' ')
+          |> compact
         )
       default:
         return []
