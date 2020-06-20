@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/dword-design/depcheck-detector-execa/compare/v1.2.0...v1.2.1) (2020-06-20)
+
+
+### Bug Fixes
+
+* fix params in template strings ([680207d](https://github.com/dword-design/depcheck-detector-execa/commit/680207de58607997045aca6268a8b513f4c28b00))
+
 # [1.2.0](https://github.com/dword-design/depcheck-detector-execa/compare/v1.1.0...v1.2.0) (2020-06-20)
 
 
