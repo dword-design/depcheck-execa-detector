@@ -9,16 +9,25 @@ import {
   mapValues,
   uniq,
   split,
+  trim,
 } from '@dword-design/functions'
 import resolveFrom from 'resolve-from'
 
 const getSegments = node => {
   if (
     node.callee?.object?.name === 'execa' &&
-    node.callee?.property?.name === 'command' &&
-    node.arguments[0].type === 'StringLiteral'
+    node.callee?.property?.name === 'command'
   ) {
-    return node.arguments[0].value |> split(' ')
+    switch (node.arguments[0].type) {
+      case 'StringLiteral':
+        return node.arguments[0].value |> split(' ')
+      case 'TemplateLiteral':
+        return (
+          node.arguments[0].quasis |> map('value.raw') |> map(trim) |> compact
+        )
+      default:
+        return []
+    }
   }
   if (node.callee?.name === 'execa') {
     return [
