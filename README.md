@@ -1,16 +1,16 @@
 <!-- TITLE/ -->
-# depcheck-execa-detector
+# depcheck-detector-execa
 <!-- /TITLE -->
 
 <!-- BADGES/ -->
-[![NPM version](https://img.shields.io/npm/v/depcheck-execa-detector.svg)](https://npmjs.org/package/depcheck-execa-detector)
+[![NPM version](https://img.shields.io/npm/v/depcheck-detector-execa.svg)](https://npmjs.org/package/depcheck-detector-execa)
 ![Linux macOS Windows compatible](https://img.shields.io/badge/os-linux%20%7C%C2%A0macos%20%7C%C2%A0windows-blue)
-[![Build status](https://img.shields.io/github/workflow/status/dword-design/depcheck-execa-detector/build)](https://github.com/dword-design/depcheck-execa-detector/actions)
-[![Coverage status](https://img.shields.io/coveralls/dword-design/depcheck-execa-detector)](https://coveralls.io/github/dword-design/depcheck-execa-detector)
-[![Dependency status](https://img.shields.io/david/dword-design/depcheck-execa-detector)](https://david-dm.org/dword-design/depcheck-execa-detector)
+[![Build status](https://img.shields.io/github/workflow/status/dword-design/depcheck-detector-execa/build)](https://github.com/dword-design/depcheck-detector-execa/actions)
+[![Coverage status](https://img.shields.io/coveralls/dword-design/depcheck-detector-execa)](https://coveralls.io/github/dword-design/depcheck-detector-execa)
+[![Dependency status](https://img.shields.io/david/dword-design/depcheck-detector-execa)](https://david-dm.org/dword-design/depcheck-detector-execa)
 ![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen)
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/dword-design/depcheck-execa-detector)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/dword-design/depcheck-detector-execa)
 <!-- /BADGES -->
 
 <!-- DESCRIPTION/ -->
@@ -22,10 +22,10 @@ Detector for depcheck that finds dependencies in execa calls.
 
 ```bash
 # NPM
-$ npm install depcheck-execa-detector
+$ npm install depcheck-detector-execa
 
 # Yarn
-$ yarn add depcheck-execa-detector
+$ yarn add depcheck-detector-execa
 ```
 <!-- /INSTALL -->
 
@@ -35,7 +35,7 @@ Custom detectors are currently only supported when using `depcheck` via the Node
 
 ```js
 import depcheck from 'depcheck'
-import execaDetector from 'depcheck-execa-detector'
+import execaDetector from 'depcheck-detector-execa'
 
 const options = {
   detectors: [
