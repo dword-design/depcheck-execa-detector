@@ -102,6 +102,6 @@ export default {
       }
     }
   `,
-    'src/index.js': "execa.command(`foo ${'bar'}`)",
+    'src/index.js': "execa.command(`foo ${'bar'} baz`)",
   },
 } |> mapValues(runTest)
