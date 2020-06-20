@@ -12,25 +12,31 @@ import {
 } from '@dword-design/functions'
 import resolveFrom from 'resolve-from'
 
+const getSegments = node => {
+  if (
+    node.callee?.object?.name === 'execa' &&
+    node.callee?.property?.name === 'command' &&
+    node.arguments[0].type === 'StringLiteral'
+  ) {
+    return node.arguments[0].value |> split(' ')
+  }
+  if (node.callee?.name === 'execa') {
+    return [
+      ...(node.arguments[0].type === 'StringLiteral'
+        ? [node.arguments[0].value]
+        : []),
+      ...(node.arguments[1]?.type === 'ArrayExpression'
+        ? node.arguments[1].elements
+          |> filter({ type: 'StringLiteral' })
+          |> map('value')
+        : []),
+    ]
+  }
+  return []
+}
 export default (node, deps) => {
   if (node.type === 'CallExpression') {
-    const segments =
-      node.callee?.object?.name === 'execa' &&
-      node.callee?.property?.name === 'command' &&
-      node.arguments[0].type === 'StringLiteral'
-        ? node.arguments[0].value |> split(' ')
-        : node.callee?.name === 'execa'
-        ? [
-            ...(node.arguments[0].type === 'StringLiteral'
-              ? [node.arguments[0].value]
-              : []),
-            ...(node.arguments[1]?.type === 'ArrayExpression'
-              ? node.arguments[1].elements
-                |> filter({ type: 'StringLiteral' })
-                |> map('value')
-              : []),
-          ]
-        : []
+    const segments = getSegments(node)
     if (segments.length > 0) {
       const binaryPackageMap =
         deps
