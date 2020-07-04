@@ -1,15 +1,15 @@
 import {
-  map,
-  filter,
-  keys,
   compact,
+  filter,
   flatMap,
   flatten,
   groupBy,
-  mapValues,
-  uniq,
-  split,
   join,
+  keys,
+  map,
+  mapValues,
+  split,
+  uniq,
 } from '@dword-design/functions'
 import resolveFrom from 'resolve-from'
 
@@ -47,6 +47,7 @@ const getSegments = node => {
   }
   return []
 }
+
 export default (node, deps) => {
   if (node.type === 'CallExpression') {
     const segments = getSegments(node)
@@ -61,11 +62,10 @@ export default (node, deps) => {
           const bin = packageConfig.bin || {}
           const binaries =
             typeof bin === 'string' ? [packageConfig.name] : bin |> keys
-          return binaries |> map(binary => ({ dep, binary }))
+          return binaries |> map(binary => ({ binary, dep }))
         })
         |> groupBy('binary')
         |> mapValues(tuples => tuples |> map('dep'))
-
       return (
         segments
         |> map(segment => binaryPackageMap[segment])
