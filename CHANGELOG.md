@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/dword-design/depcheck-detector-execa/compare/v1.2.2...v1.2.3) (2020-08-26)
+
+
+### Bug Fixes
+
+* upgrades ([015cff1](https://github.com/dword-design/depcheck-detector-execa/commit/015cff1458f059435e620db73d9e12e31a6b074f))
+
 ## [1.2.2](https://github.com/dword-design/depcheck-detector-execa/compare/v1.2.1...v1.2.2) (2020-07-04)
 
 
