@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/dword-design/depcheck-detector-execa/compare/v1.2.3...v1.2.4) (2020-12-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency execa to v5 ([fcc0149](https://github.com/dword-design/depcheck-detector-execa/commit/fcc014995b2a4a30a2f51456e1daa3d0fc5d3d5c))
+
 ## [1.2.3](https://github.com/dword-design/depcheck-detector-execa/compare/v1.2.2...v1.2.3) (2020-08-26)
 
 
