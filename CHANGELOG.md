@@ -1,3 +1,10 @@
+## [1.2.5](https://github.com/dword-design/depcheck-detector-execa/compare/v1.2.4...v1.2.5) (2020-12-10)
+
+
+### Bug Fixes
+
+* generate readme ([5f0c8e3](https://github.com/dword-design/depcheck-detector-execa/commit/5f0c8e39929827720bfd178d446ae5d53e539810))
+
 ## [1.2.4](https://github.com/dword-design/depcheck-detector-execa/compare/v1.2.3...v1.2.4) (2020-12-10)
 
 
