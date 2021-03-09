@@ -3,7 +3,7 @@
 <!-- /TITLE -->
 
 <!-- BADGES/ -->
-[![NPM version](https://img.shields.io/npm/v/depcheck-detector-execa.svg)](https://npmjs.org/package/depcheck-detector-execa)
+[![npm version](https://img.shields.io/npm/v/depcheck-detector-execa.svg)](https://npmjs.org/package/depcheck-detector-execa)
 ![Linux macOS Windows compatible](https://img.shields.io/badge/os-linux%20%7C%C2%A0macos%20%7C%C2%A0windows-blue)
 [![Build status](https://github.com/dword-design/depcheck-detector-execa/workflows/build/badge.svg)](https://github.com/dword-design/depcheck-detector-execa/actions)
 [![Coverage status](https://img.shields.io/coveralls/dword-design/depcheck-detector-execa)](https://coveralls.io/github/dword-design/depcheck-detector-execa)
@@ -41,7 +41,7 @@ Detector for depcheck that finds dependencies in execa calls.
 ## Install
 
 ```bash
-# NPM
+# npm
 $ npm install depcheck-detector-execa
 
 # Yarn
