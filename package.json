@@ -3,6 +3,7 @@
   "version": "1.2.8",
   "description": "Detector for depcheck that finds dependencies in execa calls.",
   "repository": "dword-design/depcheck-detector-execa",
+  "funding": "https://www.buymeacoffee.com/dword",
   "license": "MIT",
   "author": "Sebastian Landwehr <info@dword-design.de>",
   "main": "dist/index.js",
