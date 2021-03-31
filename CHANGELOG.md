@@ -1,3 +1,10 @@
+## [1.2.12](https://github.com/dword-design/depcheck-detector-execa/compare/v1.2.11...v1.2.12) (2021-03-31)
+
+
+### Bug Fixes
+
+* lock file maintenance ([#19](https://github.com/dword-design/depcheck-detector-execa/issues/19)) ([ed499cd](https://github.com/dword-design/depcheck-detector-execa/commit/ed499cdef233f43caba775310fc6bb28a846d12d))
+
 ## [1.2.11](https://github.com/dword-design/depcheck-detector-execa/compare/v1.2.10...v1.2.11) (2021-03-23)
 
 
