@@ -45,6 +45,7 @@ const getSegments = node => {
         : []),
     ]
   }
+
   return []
 }
 
@@ -59,13 +60,17 @@ export default (node, deps) => {
             process.cwd(),
             `${dep}/package.json`
           ))
+
           const bin = packageConfig.bin || {}
+
           const binaries =
             typeof bin === 'string' ? [packageConfig.name] : bin |> keys
+
           return binaries |> map(binary => ({ binary, dep }))
         })
         |> groupBy('binary')
         |> mapValues(tuples => tuples |> map('dep'))
+
       return (
         segments
         |> map(segment => binaryPackageMap[segment])
@@ -75,5 +80,6 @@ export default (node, deps) => {
       )
     }
   }
+
   return []
 }
