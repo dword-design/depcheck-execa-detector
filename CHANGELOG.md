@@ -1,3 +1,18 @@
+# [2.0.0](https://github.com/dword-design/depcheck-detector-execa/compare/v1.2.14...v2.0.0) (2021-05-03)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/base to v8 ([#30](https://github.com/dword-design/depcheck-detector-execa/issues/30)) ([8a7c8b4](https://github.com/dword-design/depcheck-detector-execa/commit/8a7c8b49df5389757eff73c99cb711f441f78ac8))
+
+
+### BREAKING CHANGES
+
+* require Node.js >= 12
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+Co-authored-by: Sebastian Landwehr <info@dword-design.de>
+
 ## [1.2.14](https://github.com/dword-design/depcheck-detector-execa/compare/v1.2.13...v1.2.14) (2021-04-26)
 
 
