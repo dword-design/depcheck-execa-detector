@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/dword-design/depcheck-detector-execa/compare/v2.0.1...v2.0.2) (2021-05-04)
+
+
+### Bug Fixes
+
+* update dependency with-local-tmp-dir to v4 ([#33](https://github.com/dword-design/depcheck-detector-execa/issues/33)) ([58db2a8](https://github.com/dword-design/depcheck-detector-execa/commit/58db2a84a539e69e6e2ff27fb922cd52052780bf))
+
 ## [2.0.1](https://github.com/dword-design/depcheck-detector-execa/compare/v2.0.0...v2.0.1) (2021-05-04)
 
 
