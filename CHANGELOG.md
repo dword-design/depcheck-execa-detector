@@ -1,3 +1,10 @@
+## [2.0.5](https://github.com/dword-design/depcheck-detector-execa/compare/v2.0.4...v2.0.5) (2021-06-09)
+
+
+### Bug Fixes
+
+* use official depcheck ([#37](https://github.com/dword-design/depcheck-detector-execa/issues/37)) ([7fcf5fb](https://github.com/dword-design/depcheck-detector-execa/commit/7fcf5fb782c68674e03cd13c552820ebc34fc12d))
+
 ## [2.0.4](https://github.com/dword-design/depcheck-detector-execa/compare/v2.0.3...v2.0.4) (2021-05-11)
 
 
