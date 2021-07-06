@@ -1,3 +1,10 @@
+## [2.0.7](https://github.com/dword-design/depcheck-detector-execa/compare/v2.0.6...v2.0.7) (2021-07-06)
+
+
+### Bug Fixes
+
+* update config files ([f4d07d6](https://github.com/dword-design/depcheck-detector-execa/commit/f4d07d6008fc732eb004ea1d279dbe9d8ceefeed))
+
 ## [2.0.6](https://github.com/dword-design/depcheck-detector-execa/compare/v2.0.5...v2.0.6) (2021-06-14)
 
 
